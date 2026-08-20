@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #f6f1e8;
+  --parchment: #ebe4d6;
+  --navy: #0d1b2a;
+  --navy-soft: #1a2f4a;
+  --gold: #b8956c;
+  --gold-deep: #8a6a3e;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-parchment: var(--parchment);
+  --color-navy: var(--navy);
+  --color-navy-soft: var(--navy-soft);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --font-sans: var(--font-lora), Georgia, serif;
+  --font-serif: var(--font-cormorant);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--cream);
+  color: var(--navy);
+  font-family: var(--font-lora), Georgia, serif;
+}
+
+::selection {
+  background: var(--navy);
+  color: var(--cream);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
