@@ -1,5 +1,5 @@
 import { BookCallButton } from "./BookCallButton";
-import { Container, Eyebrow, GoldRule } from "./ui";
+import { Container, Eyebrow } from "./ui";
 
 export function Hero() {
   return (

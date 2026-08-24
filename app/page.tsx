@@ -4,7 +4,6 @@ import { FinalCta } from "./components/FinalCta";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
-import { HowItWorks } from "./components/HowItWorks";
 import { InterestForm } from "./components/InterestForm";
 import { Subjects } from "./components/Subjects";
 import { Testimonials } from "./components/Testimonials";
@@ -26,7 +25,6 @@ export default function Home() {
         <TrustBar />
         <WhyUs />
         <Subjects />
-        <HowItWorks />
         <About />
         <Testimonials />
         <InterestForm />

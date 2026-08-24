@@ -39,7 +39,7 @@ export function InterestForm() {
   return (
     <section id="interest" className="scroll-mt-24 bg-parchment pb-20 md:pb-28">
       <SectionHeading eyebrow="Start here" title="Tell us about your student">
-        
+        Sessions typically run $60-$80 per hour. First session half off.
       </SectionHeading>
 
       <Container className="pt-8">

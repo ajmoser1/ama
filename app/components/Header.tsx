@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-gold/40 bg-cream/95 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3 lg:px-8">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-6 py-3 lg:gap-4 lg:px-8">
         <Logo compact />
 
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
@@ -35,20 +35,25 @@ export function Header() {
           <BookCallButton variant="header">Book an intro call</BookCallButton>
         </div>
 
-        <button
-          type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-sm border border-navy/15 text-navy lg:hidden"
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-          onClick={() => setOpen((value) => !value)}
-        >
-          <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
-          <span className="flex flex-col gap-1.5" aria-hidden="true">
-            <span className={`block h-px w-5 bg-navy transition ${open ? "translate-y-[3.5px] rotate-45" : ""}`} />
-            <span className={`block h-px w-5 bg-navy transition ${open ? "opacity-0" : ""}`} />
-            <span className={`block h-px w-5 bg-navy transition ${open ? "-translate-y-[3.5px] -rotate-45" : ""}`} />
-          </span>
-        </button>
+        <div className="flex shrink-0 items-center gap-2 lg:hidden">
+          <BookCallButton variant="header" className="px-3 py-2 text-[0.7rem]">
+            Book call
+          </BookCallButton>
+          <button
+            type="button"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-sm border border-navy/15 text-navy"
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            onClick={() => setOpen((value) => !value)}
+          >
+            <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
+            <span className="flex flex-col gap-1.5" aria-hidden="true">
+              <span className={`block h-px w-5 bg-navy transition ${open ? "translate-y-[3.5px] rotate-45" : ""}`} />
+              <span className={`block h-px w-5 bg-navy transition ${open ? "opacity-0" : ""}`} />
+              <span className={`block h-px w-5 bg-navy transition ${open ? "-translate-y-[3.5px] -rotate-45" : ""}`} />
+            </span>
+          </button>
+        </div>
       </div>
 
       {open ? (

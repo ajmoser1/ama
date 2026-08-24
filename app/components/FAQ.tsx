@@ -4,12 +4,12 @@ const faqs = [
   {
     question: "How much does it cost?",
     answer:
-      "Most 1-on-1 sessions are $60-$90/hr, depending on subject and level. Your first session is 50% off so you and your student can see if the tutor is the right fit before committing to more. Purchasing multiple sessions in advance results in a discount, depending on subject and schedule. We'll walk through options on the intro call.",
+      "Most 1-on-1 sessions are $60-$90 per hour, depending on subject and level. Your first session is 50% off so you and your student can see if the tutor is the right fit.",
   },
   {
     question: "How do you pick your tutors?",
     answer:
-      "Every tutor applies, gets interviewed by our founder, and is matched based on subject fit and recent experience with that exact class or test, so your student gets someone who can actually deliver results.",
+      "Every tutor applies, gets interviewed by our founder, and is matched based on subject fit and recent experience with that class or test, so your student gets someone who can actually deliver results.",
   },
   {
     question: "What if it's not a good fit?",

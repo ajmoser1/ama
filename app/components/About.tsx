@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container, SectionHeading } from "./ui";
 
 const commitments = [
@@ -7,7 +8,7 @@ const commitments = [
   },
   {
     title: "Honest expectations",
-    body: "We will not over-promise results we cannot stand behind. We do stand behind our matches, and rematch at no cost if the fit's not right.",
+    body: "We will not over-promise results we cannot stand behind. We do stand behind our matches, and rematch at no cost if the fit is not right.",
   },
   {
     title: "Progress that counts",
@@ -19,24 +20,48 @@ export function About() {
   return (
     <section id="about" className="scroll-mt-24 pb-20 md:pb-28">
       <SectionHeading eyebrow="From the founder" title="Why I built Achieve More">
-        My name is Alex Moser. I tutored at Mathnasium for a year, spent another year as a private tutor,
-        and then started Achieve More Academics because I kept seeing the same
-        problem.
+       
       </SectionHeading>
 
       <Container className="pt-8">
-        <div className="max-w-3xl space-y-2 text-base leading-relaxed text-navy/80 sm:text-lg">
-          <p>
-            Tutoring centers are too rigid. Every student got the same
-            system, even when it wasn't how they learn best. When I taught
-            someone in a way unique to them, the way
-            they actually think, the results were better.
-          </p>
-          <p>
-            That's what I built Achieve More around: personally matched tutors
-            who took your student's class or test recently, and teach
-            in a way that actually clicks.
-          </p>
+        <div className="grid items-start gap-10 md:grid-cols-[minmax(0,1fr)_220px] md:gap-12 lg:grid-cols-[minmax(0,1fr)_260px]">
+          <div className="max-w-xl space-y-5 text-navy text-lg leading-relaxed text-navy/80 sm:text-lg">
+            <p className="font-medium text-navy text-lg">
+              
+          <br />
+          <br />
+              After two years of tutoring across Mathnasium and for a private tutoring company, I saw the same problems.
+              Tutoring centers are too rigid. Every student got the same
+              system, even when it wasn't how they learned best. When I taught
+              someone in a way unique to them, the results were better.
+            
+            <br />
+            <br />
+            <br />
+              That is what I built Achieve More around: personally matched
+              tutors who took your student's class or test recently, and
+              teach in a way that actually clicks. Every plan and session is personalized to your student and their goals.
+            </p>
+          </div>
+
+          <figure className="mx-auto -translate-x-40 w-full max-w-[260px] md:mx-0 md:max-w-none">
+            <div className="overflow-hidden border border-gold/60 bg-parchment">
+              <Image
+                src="/founder.png"
+                alt="Alex Moser, founder of Achieve More Academics"
+                width={260}
+                height={320}
+                className="aspect-[10/14] w-full object-cover"
+              />
+            </div>
+            <figcaption className="mt-3 text-center font-serif text-lg font-semibold text-navy md:text-left">
+              Alex Moser
+            </figcaption>
+            <p className="mt-1 text-center text-sm text-navy/65 md:text-left">
+              Founder, Achieve More Academics
+              Carnegie Mellon University, Electrical & Computer Engineering
+            </p>
+          </figure>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">

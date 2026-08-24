@@ -3,15 +3,15 @@ import { Container, SectionHeading } from "./ui";
 const points = [
   {
     title: "Grades that reflect their potential",
-    body: "Tutors who know the class as it's taught now, not a textbook from five years ago.",
+    body: "Hand-selected tutors who know the class as it is taught now, not from a textbook five years ago.",
   },
   {
     title: "Test scores that open doors",
-    body: "Recent ACT/SAT scorers who know the test your student is taking inside and out.",
+    body: "Tutors who recently scored well on the same ACT or SAT your student is taking, not generic test prep.",
   },
   {
-    title: "A tutor they really listen to",
-    body: "Top students who areclose in age, easy to connect with.",
+    title: "A tutor they will actually listen to",
+    body: "Top-performing students, close in age, personally interviewed before they work with your family.",
   },
   {
     title: "Matched to your student's exact need",
@@ -22,10 +22,17 @@ const points = [
 export function WhyUs() {
   return (
     <section id="why-us" className="scroll-mt-24 pb-20 md:pb-28">
-      <SectionHeading title="Why families choose Achieve More">
-        You want real progress for your kids, not an hour of homework help.
-         We match your student with someone who can actually move the
-        needle on grades and test scores. How? By learning with someone who's aced the same class or test.
+      <SectionHeading
+        title={
+          <>
+            The <span className="italic">Achieve More</span> Difference
+          </>
+        }
+      >
+        You want real progress for your kids, not an hour of homework help. We
+        match your student with someone who can actually move the needle on
+        grades and test scores, with a tutor who recently aced the same class or
+        test.
       </SectionHeading>
 
       <Container className="pt-8">

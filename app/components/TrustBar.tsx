@@ -3,7 +3,7 @@ import { Container } from "./ui";
 const signals = [
   "Higher grades in the classes that matter",
   "Stronger ACT & SAT scores",
-  "1-on-1 support your student actually connects with",
+  "Hand-selected tutors your student connects with",
 ];
 
 export function TrustBar() {
