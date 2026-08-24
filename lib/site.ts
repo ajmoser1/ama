@@ -1,11 +1,8 @@
 export const SITE_NAME = "Achieve More Academics";
 
-export const BOOKING_URL =
-  process.env.NEXT_PUBLIC_BOOKING_URL ??
-  process.env.NEXT_PUBLIC_CALENDLY_URL ??
-  "https://cal.com/alexmoser/15min";
-export const TALLY_URL =
-  process.env.NEXT_PUBLIC_TALLY_URL ?? "https://tally.so/r/A7RNOW";
+/** Public booking / form / widget IDs. Safe to hardcode (visible in the browser anyway). */
+export const BOOKING_URL = "https://cal.com/alexmoser/15min";
+export const TALLY_URL = "https://tally.so/r/A7RNOW";
 
 export function getCalLink(url: string): string {
   const match = url.match(/cal\.com\/([^?#]+)/i);
